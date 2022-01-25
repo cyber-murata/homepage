@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Footer = (props:any) => {
   return(
     <_Footer>
-        <_Footertxt>© Virtual Harmonizer</_Footertxt>
+        <_Footertxt>© LiCreSia</_Footertxt>
     </_Footer>
   );
 };

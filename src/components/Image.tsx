@@ -8,18 +8,18 @@ import img3 from './img/mock3.png';
 import img4 from './img/mock4.png';
 import img5 from './img/mock5.png';
 import img6 from './img/mock6.png';
-import img7 from './img/mock7.png';
-import img8 from './img/mock8.png';
 
 const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
-    speed: 200,
+    autoplaySpeed: 2300,
+    speed: 800,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrow: true,
     adaptiveHeight: true,
+    pauseOnHover: false,
+    swipe: false,
 };
 
 const items = [
@@ -60,8 +60,8 @@ const _Face = styled.div`
 `;
 
 const _Img = styled.img`
-    width: calc(100% - 10px);
-    height: calc(100% - 10px);
+    width: calc(100%);
+    height: 650px;
 `;
 
 const _Catch = styled.div`

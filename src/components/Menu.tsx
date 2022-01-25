@@ -1,10 +1,21 @@
+import { useState } from "react";
 import styled from "styled-components";
+
+export enum PlayStatus {
+  TOP,
+  MANUAL,
+  KISO,
+  INQUIRY,
+  LINK
+}
 
 const Menu = () => {
 
+  const [status, setStatus] = useState<PlayStatus>(PlayStatus.TOP);
+
   return(<>
     <_Menulist>
-      <_Menurecord>概要</_Menurecord>
+      <_Menurecord onClick={()=>{}}>概要</_Menurecord>
       <_Menurecord onClick={()=> window.open("https://cyber-kohno.github.io/vh-react/", "_blank")}>サービス</_Menurecord>
       <_Menurecord>マニュアル</_Menurecord>
       <_Menurecord>基礎知識</_Menurecord>

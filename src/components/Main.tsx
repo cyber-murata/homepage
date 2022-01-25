@@ -1,18 +1,55 @@
 import styled from "styled-components";
 import Record from './Record';
+import Manual from './Manual';
 import img1 from './img/detail1.png';
+import { PlayStatus } from '../App';
 
-export type RecordProps = {
-    title: string;
-    detail: string;
-    image: string;
-    reverseflg: boolean;
+export type ContentsProps = {
+    status: PlayStatus;
 }
 
-const Main = (): JSX.Element => {
+const Main = (props: ContentsProps): JSX.Element => {
+
+    const getContentsJSX = (): JSX.Element => {
+        switch (props.status) {
+            case PlayStatus.TOP: return <Record
+                title="概要"
+                detail="bbb"
+                image={img1}
+                reverseflg={true}
+            />;
+            case PlayStatus.MANUAL: return <Manual
+                title="マニュアル"
+                detail="bbb"
+                image={img1}
+                reverseflg={true}
+            />;
+            case PlayStatus.KISO: return <Manual
+                title="基礎知識"
+                detail="bbb"
+                image={img1}
+                reverseflg={true}
+            />;
+            case PlayStatus.INQUIRY: return <Manual
+                title="問い合わせ"
+                detail="bbb"
+                image={img1}
+                reverseflg={true}
+            />;
+            case PlayStatus.LINK: return <Manual
+                title="リンク"
+                detail="bbb"
+                image={img1}
+                reverseflg={true}
+            />;
+            default: return <></>;
+        }
+    };
 
     return (<>
-        <Record title="aaaa" detail="bbb" image={img1} reverseflg={true} />
+        <div>
+            {getContentsJSX()}
+        </div>
     </>
     );
 };

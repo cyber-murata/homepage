@@ -19,10 +19,12 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header transitionPage={(page: PlayStatus) => {
+        setStatus(page)
+      }} />
       <Image />
       <_Topcont>
-        <Main />
+        <Main status={status}/>
       </_Topcont>
       <Footer />
     </>

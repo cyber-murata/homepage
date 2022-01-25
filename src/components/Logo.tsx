@@ -2,7 +2,7 @@ import styled from "styled-components";
 const Logo = () => {
   return(
     <_Logo>
-    <span>Virtual Harmonizer</span>
+    <span>LiCreSia</span>
     </_Logo>
   );
 };
