@@ -3,7 +3,6 @@ import Menu from './Menu';
 import styled from "styled-components";
 import { PlayStatus } from '../App';
 
-
 const Header = (props: { transitionPage: (page: PlayStatus) => void }) => {
 
   return (

@@ -15,7 +15,7 @@ export enum PlayStatus {
 
 function App() {
 
-  const [status, setStatus] = useState<PlayStatus>(PlayStatus.TOP);
+  const [status, setStatus] = useState<PlayStatus>(PlayStatus.MANUAL);
 
   return (
     <>
