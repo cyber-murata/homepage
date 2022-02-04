@@ -5,8 +5,8 @@ import Image from './components/Image';
 import Main from './components/Main';
 import Footer from './components/Footer';
 
-export enum PlayStatus {
-  TOP,
+export enum PageStatus {
+  OUTLINE,
   MANUAL,
   KISO,
   INQUIRY,
@@ -15,16 +15,16 @@ export enum PlayStatus {
 
 function App() {
 
-  const [status, setStatus] = useState<PlayStatus>(PlayStatus.TOP);
+  const [status, setStatus] = useState<PageStatus>(PageStatus.OUTLINE);
 
   return (
     <>
-      <Header transitionPage={(page: PlayStatus) => {
+      <Header transitionPage={(page: PageStatus) => {
         setStatus(page)
       }} />
       <Image />
       <_Topcont>
-        <Main status={status}/>
+        <Main status={status} />
       </_Topcont>
       <Footer />
     </>
