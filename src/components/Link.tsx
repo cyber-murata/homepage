@@ -11,30 +11,26 @@ const items = [
 
 const Link = (): JSX.Element => {
 
-  return(<>
-    <_Record>
-            <div>
-                <_Catch>
-                    リンク
-                </_Catch>
-                <_Detail>
-                </_Detail>
-            </div>
-            <div>
-            </div>
+    return (<>
+        <_Record>
+            <_Catch>
+                リンク
+            </_Catch>
+            <_Detail>
+            </_Detail>
         </_Record>
     </>
-  );
+    );
 };
 
-const _Record= styled.div`
+const _Record = styled.div`
     display: inline-block;
     width: 100%;
     margin-top: 20px;
     background-Color: rgb(62, 123, 238);
 `;
 
-const _Catch= styled.div`
+const _Catch = styled.div`
     display: inline-block;
     font-size: 38px;
     color: rgba(255, 255, 255, 0.719);
@@ -42,14 +38,14 @@ const _Catch= styled.div`
     margin-bottom: 20px;
 `;
 
-const _Detail= styled.div`
+const _Detail = styled.div`
     display: inline-block;
     font-size: 16px;
     line-height: 28px;
     color: rgb(255, 255, 255);
 `;
 
-const _Image= styled.img`
+const _Image = styled.img`
     width: 550px;
     height: 600px;
     border-radius: 5px;

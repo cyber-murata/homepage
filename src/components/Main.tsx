@@ -1,28 +1,28 @@
 import styled from "styled-components";
-import Record from './Record';
+import Outline from './Outline';
 import Manual from './Manual';
 import Kiso from './Kiso';
 import Inquiry from './Inquiry';
 import Link from './Link';
-import { PlayStatus } from '../App';
+import { PageStatus } from '../App';
 
 export type ContentsProps = {
-    status: PlayStatus;
+    status: PageStatus;
 }
 
 const Main = (props: ContentsProps): JSX.Element => {
 
     const getContentsJSX = (): JSX.Element => {
         switch (props.status) {
-            case PlayStatus.TOP:
-                return <Record />;
-            case PlayStatus.MANUAL:
+            case PageStatus.OUTLINE:
+                return <Outline />;
+            case PageStatus.MANUAL:
                 return <Manual />;
-            case PlayStatus.KISO:
+            case PageStatus.KISO:
                 return <Kiso />;
-            case PlayStatus.INQUIRY:
+            case PageStatus.INQUIRY:
                 return <Inquiry />;
-            case PlayStatus.LINK:
+            case PageStatus.LINK:
                 return <Link />;
             default:
                 return <></>;

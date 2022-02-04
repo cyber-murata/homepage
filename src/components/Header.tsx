@@ -1,20 +1,20 @@
 import Logo from './Logo';
 import Menu from './Menu';
 import styled from "styled-components";
-import { PlayStatus } from '../App';
+import { PageStatus } from '../App';
 
-const Header = (props: { transitionPage: (page: PlayStatus) => void }) => {
+const Header = (props: { transitionPage: (page: PageStatus) => void }) => {
 
   return (
     <_Header>
       <Logo />
       <_Menulist>
-        <_Menurecord onClick={() => { props.transitionPage(PlayStatus.TOP) }}>概要</_Menurecord>
+        <_Menurecord onClick={() => { props.transitionPage(PageStatus.OUTLINE) }}>概要</_Menurecord>
         <_Menurecord onClick={() => window.open("https://cyber-kohno.github.io/vh-react/", "_blank")}>サービス</_Menurecord>
-        <_Menurecord onClick={() => { props.transitionPage(PlayStatus.MANUAL) }}>マニュアル</_Menurecord>
-        <_Menurecord onClick={() => { props.transitionPage(PlayStatus.KISO) }}>基礎知識</_Menurecord>
-        <_Menurecord onClick={() => { props.transitionPage(PlayStatus.INQUIRY) }}>お問い合わせ</_Menurecord>
-        <_Menurecord onClick={() => { props.transitionPage(PlayStatus.LINK) }}>リンク</_Menurecord>
+        <_Menurecord onClick={() => { props.transitionPage(PageStatus.MANUAL) }}>マニュアル</_Menurecord>
+        <_Menurecord onClick={() => { props.transitionPage(PageStatus.KISO) }}>基礎知識</_Menurecord>
+        <_Menurecord onClick={() => { props.transitionPage(PageStatus.INQUIRY) }}>お問い合わせ</_Menurecord>
+        <_Menurecord onClick={() => { props.transitionPage(PageStatus.LINK) }}>リンク</_Menurecord>
       </_Menulist>
     </_Header>
   );

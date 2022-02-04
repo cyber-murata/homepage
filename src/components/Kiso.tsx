@@ -13,15 +13,11 @@ const Kiso = (): JSX.Element => {
 
     return (<>
         <_Record>
-            <div>
-                <_Catch>
-                    基礎
-                </_Catch>
-                <_Detail>
-                </_Detail>
-            </div>
-            <div>
-            </div>
+            <_Catch>
+                基礎
+            </_Catch>
+            <_Detail>
+            </_Detail>
         </_Record>
     </>
     );

@@ -1,32 +1,22 @@
 import { useState } from "react";
 import styled from "styled-components";
 
-export enum PlayStatus {
-  TOP,
-  MANUAL,
-  KISO,
-  INQUIRY,
-  LINK
-}
-
 const Menu = () => {
 
-  const [status, setStatus] = useState<PlayStatus>(PlayStatus.TOP);
-
-  return(<>
+  return (<>
     <_Menulist>
-      <_Menurecord onClick={()=>{}}>概要</_Menurecord>
-      <_Menurecord onClick={()=> window.open("https://cyber-kohno.github.io/vh-react/", "_blank")}>サービス</_Menurecord>
+      <_Menurecord onClick={() => { }}>概要</_Menurecord>
+      <_Menurecord onClick={() => window.open("https://cyber-kohno.github.io/vh-react/", "_blank")}>サービス</_Menurecord>
       <_Menurecord>マニュアル</_Menurecord>
       <_Menurecord>基礎知識</_Menurecord>
       <_Menurecord>お問い合わせ</_Menurecord>
       <_Menurecord>リンク</_Menurecord>
     </_Menulist>
-    </>
+  </>
   );
 };
 
-const _Menulist= styled.div`
+const _Menulist = styled.div`
     display: inline-block;
     margin: 8px 10px;
     text-align: center;
@@ -35,7 +25,7 @@ const _Menulist= styled.div`
     /* background-color: rgba(255, 255, 255, 0.1); */
 `;
 
-const _Menurecord= styled.li`
+const _Menurecord = styled.li`
     display: inline-block;
     margin: 8px 10px;
     display: inline-block;
@@ -50,7 +40,7 @@ const _Menurecord= styled.li`
   }
 `;
 
-const _Smallmenu= styled.div`
+const _Smallmenu = styled.div`
     display: none;
     float: right;
     margin: 15px 10px 0 0;

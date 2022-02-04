@@ -3,7 +3,7 @@ import styled from "styled-components";
 import img1 from './img/★作曲の構想に特化した新しいDTM.png';
 import img2 from './img/★音楽理論をシステムに内臓.png';
 
-const RecordItems = [
+const OutlineItems = [
     {
         title: `★作曲の構想に特化した新しいDTM`,
         detail: `Licresiaは、作曲に必要な2要素である、
@@ -29,10 +29,10 @@ const RecordItems = [
     },
 ];
 
-const Record = (): JSX.Element => {
+const Outline = (): JSX.Element => {
 
     const recordJSXList: JSX.Element[] = [];
-    RecordItems.forEach((record, i) => {
+    OutlineItems.forEach((record, i) => {
         if (record.reverseflg) {
             recordJSXList.push(
                 <_Record>
@@ -120,7 +120,7 @@ const _Image = styled.img`
     width: 550px;
     height: 600px;
     border-radius: 5px;
-    object-fit: fill;
+    object-fit: contain;
 `;
 
-export default Record;
+export default Outline;
