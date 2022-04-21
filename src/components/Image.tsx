@@ -13,19 +13,19 @@ const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2300,
-    speed: 800,
+    autoplaySpeed: 5000,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true,
     pauseOnHover: false,
     swipe: false,
+    fade: true,
 };
 
 const items = [
     { title: "name1", img: img1 },
     { title: "name2", img: img2 },
-    { title: "name3", img: img3 },
+    // { title: "name3", img: img3 },
     { title: "name4", img: img4 },
     { title: "name5", img: img5 },
     { title: "name6", img: img6 },
@@ -60,8 +60,10 @@ const _Face = styled.div`
 `;
 
 const _Img = styled.img`
-    width: calc(100%);
-    height: 650px;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: 90% 20%;
 `;
 
 const _Catch = styled.div`

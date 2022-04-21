@@ -10,9 +10,9 @@ const Header = (props: { transitionPage: (page: PageStatus) => void }) => {
       <Logo />
       <_Menulist>
         <_Menurecord onClick={() => { props.transitionPage(PageStatus.OUTLINE) }}>概要</_Menurecord>
-        <_Menurecord onClick={() => window.open("https://cyber-kohno.github.io/vh-react/", "_blank")}>サービス</_Menurecord>
+        <_Menurecord onClick={() => window.open("https://cyber-kohno.github.io/licresia_demo_app/", "_blank")}>サービス</_Menurecord>
+        <_Menurecord onClick={() => { props.transitionPage(PageStatus.GUIDE) }}>使い方</_Menurecord>
         <_Menurecord onClick={() => { props.transitionPage(PageStatus.MANUAL) }}>マニュアル</_Menurecord>
-        <_Menurecord onClick={() => { props.transitionPage(PageStatus.KISO) }}>基礎知識</_Menurecord>
         <_Menurecord onClick={() => { props.transitionPage(PageStatus.INQUIRY) }}>お問い合わせ</_Menurecord>
         <_Menurecord onClick={() => { props.transitionPage(PageStatus.LINK) }}>リンク</_Menurecord>
       </_Menulist>
@@ -36,7 +36,7 @@ const _Header = styled.header`
 const _Menulist = styled.div`
     display: inline-block;
     margin: 8px 10px;
-    text-align: center;
+    text-align: right;
     width: calc(100% - 460px);
     vertical-align: middle;
     /* background-color: rgba(255, 255, 255, 0.1); */

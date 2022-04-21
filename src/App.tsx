@@ -7,15 +7,15 @@ import Footer from './components/Footer';
 
 export enum PageStatus {
   OUTLINE,
+  GUIDE,
   MANUAL,
-  KISO,
   INQUIRY,
   LINK
 }
 
 function App() {
 
-  const [status, setStatus] = useState<PageStatus>(PageStatus.OUTLINE);
+  const [status, setStatus] = useState<PageStatus>(PageStatus.MANUAL);
 
   return (
     <>
