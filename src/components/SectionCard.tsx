@@ -29,18 +29,18 @@ const SectionCard = (props: {cardKey: number, image: string, title: string, deta
 
 const _SectionCard = styled.div`
     display: inline-block;
-    width: 400px;
+    width: 420px;
     height: 200px;
     margin-top: 20px;
-    /* background-Color: #333333; */
-    background-Color: white;
+    background-Color: rgba(256,256,256,0.6);
+    /* background-Color: white; */
     border: solid;
     margin-bottom: 20px;
     margin-right: 20px;
     text-align: left;
     &:hover{
-        /* background-Color: rgba(0,0,0,0.5); */
-        background-Color: #A7F1FF;
+        background-Color: rgba(256,256,256,0.8);
+        /* background-Color: #A7F1FF; */
     }
 `;
 
@@ -68,7 +68,7 @@ const _Recordlist2 = styled.div`
 
 const _Catch = styled.div`
     display: inline-block;
-    width: 180px;
+    width: 200px;
     font-size: 15px;
     /* color: #E6FFE9; */
     color: #000000;
@@ -80,7 +80,7 @@ const _Catch = styled.div`
 
 const _Detail = styled.div`
     display: inline-block;
-    width: 170px;
+    width: 190px;
     font-size: 12px;
     /* color: #E6FFE9; */
     color: #000000;
